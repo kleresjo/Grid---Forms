@@ -13,20 +13,26 @@ p {
 
 label {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 7px;
 }
 
 textarea {
     font-family: 'Roboto', sans-serif;
     margin: auto;
+    padding: 10px;
     max-width: 500px;
     min-width: 500px;
     min-height: 200px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    letter-spacing: 1.2;
+    line-height: 1.4;
 }
 
 textarea:focus {
     outline: none;
+    background-color: rgb(236, 236, 236);
 }
 
 input:focus {
@@ -88,7 +94,7 @@ select:focus {
     border-radius: 5px;
     border-bottom: solid grey 1px;
     grid-area: 2 / 1 / span 1 / span 4;
-    padding: 10px;
+    padding: 20px;
 }
 
 .inputtext {
@@ -98,6 +104,7 @@ select:focus {
     border-left: none;
     border-right: none;
     border-bottom: solid grey 1px;
+    margin-bottom: 5px;
 }
 
 .inputtext:focus {
@@ -122,13 +129,15 @@ select:focus {
 }
 
 .btn {
-    width: 100%;
-    height: 40px;
-    margin-top: 1%;
+    width: 20%;
+    height: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
     color: rgb(255, 255, 255); 
     background-color: grey;
     border: transparent 1px solid;
     border-radius: 20px;
+    margin: auto;
 }
 
 .btn:hover {
@@ -136,4 +145,63 @@ select:focus {
     border: solid 1px grey;
     background-color: transparent;
     cursor: pointer;
+}
+
+#date {
+    font-family: 'Roboto', sans-serif;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid grey 1px;
+}
+
+#date:focus {
+    outline: none;
+    background-color: rgb(236, 236, 236);
+}
+
+#dropoff {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid grey 1px;
+}
+
+#dropoff:focus {
+    outline: none;
+    background-color: rgb(236, 236, 236);
+}
+
+.pickup {
+    margin-left: 11%;
+    margin-bottom: 1%;
+}
+
+#pickup {
+    width: 20%;
+    font-family: 'Robot', sans-serif;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid grey 1px;
+    margin-left: 11%;
+}
+
+#pickup:focus {
+    outline: none;
+    background-color: rgb(236, 236, 236);
+}
+
+
+.center {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+
+.instructions {
+    margin-top: 5%;
+    margin-left: 11%;
 }

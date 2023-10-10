@@ -61,19 +61,19 @@
     </div>
  </div>
         <div class="form-bottom">
-            <div>
+            <div class="center">
             <label for="date">Pickup Date/Time</label>
             <input type="date" name="date" id="date">
-            <label for="dropoff">Dropoff Place</label>
+            <label for="dropoff">Dropoff place</label>
             <input type="text" name="dropoff" id="dropoff">
             </div>
-            <label for="pickup">Pickup Place</label>
+            <label for="pickup" class="pickup">Pickup Place</label>
             <select name="pickup" required id="pickup">
-                <option value="">Pick:</option>
+                <option value="" disabled selected>Choose one:</option>
                 <option value="Home">Home</option>
                 <option value="City">City</option>
             </select>
-            <label for="instructions">Special Instructions</label>
+            <label for="instructions" class="instructions">Special Instructions</label>
             <textarea name="instructions" cols="30" rows="10" id="instructions"></textarea>
             <input type="submit" value="Submit" class="btn">
      </div>
