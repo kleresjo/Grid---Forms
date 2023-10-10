@@ -8,66 +8,77 @@
 </head>
 <body>
 
-    <div class="content">
-        <div>
+    <div>
+     <form action="https://httpbin.org/anything" method="post" class="content">
         <div class="form-left">
-        <form action="https://httpbin.org/anything" method="post">
-        <div class="column">
             <div class="row">
             <i class="fa-solid fa-user ikon"></i>
-        <input type="text" placeholder="Förnamn *" class="inputtext">
+            <Label for="name">Name</Label>
+            </div>
+            <div class="column">
+        <input type="text" name="name" class="inputtext" id="name" required>
+        </div>
+            <div class="row">
+                <i class="fa-solid fa-lock ikon"></i>
+            <Label for="password">Password</Label>
+            </div>
+            <div class="column">
+             <input type="password" name="password" class="inputtext" id="password" required>
             </div>
             <div class="row">
-            <i class="fa-solid fa-user ikon"></i>
-        <input type="text" placeholder="Efternamn *" class="inputtext">
+                <i class="fa-solid fa-envelope ikon"></i>
+                <Label for="email">Email</Label>
             </div>
-            <div class="row">
-            <i class="fa-solid fa-phone ikon"></i>
-        <input type="tel" name="" id="" placeholder="Telefon" class="inputtext">
+                <div class="column">
+              <input type="email" name="email" class="inputtext" id="email" required>
             </div>
-            <div class="row">
-            <i class="fa-solid fa-envelope ikon"></i>
-        <input type="email" name="" id="" placeholder="E-postadress" class="inputtext">
-        </div>
-        </div>
-        </div>
-    </div>
-
+            </div>
     <div class="form-right">
-        <div class="row">
-        <i class="fa-solid fa-cart-shopping ikon"></i>
-        <input type="number" name="" id="" placeholder="Ordernummer" class="inputtext">
+        <p>Which taxi do you require</p>
+        <div class="radio">
+            <div class="radiorow">
+                <input type="radio" name="Car" value="HTML" id="car">
+        <label for="car">Car</label>
         </div>
-        <div class="row">
-        <i class="fa-solid fa-circle-info ikon"></i>
-        <input type="number" name="" id="" placeholder="Artikelnummer" class="inputtext">
+        <div class="radiorow">
+            <input type="radio" name="Van" value="HTML" id="van">
+        <label for="van">Van</label>
         </div>
-        <p>Vilken är din favorit? </p>
-        <div class="checkbox">
-        <i class="fa-solid fa-cat ikon"></i>
-        <label for="katter">Katter</label>
-        <input type="radio" id="katter" name="fav_language" value="HTML">
-        <i class="fa-solid fa-dog ikon"></i>
-        <label for="hundar">Hundar</label>
-        <input type="radio" id="hundar" name="fav_language" value="HTML">
+        <div class="radiorow">
+            <input type="radio" name="tuk" value="HTML" id="tuk">
+        <label for="tuk">Tuk Tuk</label>
+        </div>
+        <p>Extras</p>
+        <div class="radiorow">
+        <input type="checkbox" name="baby" id="baby"><label for="baby">Baby Seat</label>
+        </div>
+        <div class="radiorow">
+        <input type="checkbox" name="wheelchair" id="wheelchair"><label for="wheelchair">Wheelchair Access</label>
+        </div>
+        <div class="radiorow">
+        <input type="checkbox" name="stock" id="stock"><label for="stock">Stock Tip</label>
+        </div>
     </div>
-
-     <div class="checkbox">
-        <input type="checkbox" name="" id="">
-        <p>Härmed intygar jag att jag är minst 18 år och godkänner våra  <br> medlemsvillkor och integritetspolicy.</p>
-        </div>
-        </div>
+ </div>
         <div class="form-bottom">
-            <p>Rubrik</p>
-            <input type="text" name="" id="">
-            <p>Ditt meddelande *</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <p>Bifoga filer</p>
-            <input type="file" name="" id="">
-            <input type="submit" value="Skicka">
+            <div>
+            <label for="date">Pickup Date/Time</label>
+            <input type="date" name="date" id="date">
+            <label for="dropoff">Dropoff Place</label>
+            <input type="text" name="dropoff" id="dropoff">
+            </div>
+            <label for="pickup">Pickup Place</label>
+            <select name="pickup" required id="pickup">
+                <option value="">Pick:</option>
+                <option value="Home">Home</option>
+                <option value="City">City</option>
+            </select>
+            <label for="instructions">Special Instructions</label>
+            <textarea name="instructions" cols="30" rows="10" id="instructions"></textarea>
+            <input type="submit" value="Submit" class="btn">
      </div>
     </form>
-    </div>
+</div>
 
     <script src="https://kit.fontawesome.com/49654d2d6c.js" crossorigin="anonymous"></script>
 </body>
